@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Dialog Fragment start -->
+
+	<style name="mz.PanelDialog" parent="Theme.AppCompat.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/mz_dialog_material_background_light</item>
+		<item name="android:windowIsFloating">true</item>
+	</style>
+
+	<style name="mz.PanelFragment" parent="Theme.AppCompat.Light">
+		<item name="android:colorBackground">@color/background_floating_material_light</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowTitleStyle">@style/RtlOverlay.DialogWindowTitle.AppCompat</item>
+		<item name="android:windowTitleBackgroundStyle">
+			@style/Base.DialogWindowTitleBackground.AppCompat
+		</item>
+		<item name="android:windowBackground">@drawable/mz_dialog_material_background_light</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowActionModeOverlay">false</item>
+		<item name="android:listDivider">@null</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+
+	<style name="Animation.Panel.Bottom" parent="mz.PanelFragment">
+		<item name="android:windowEnterAnimation">@anim/mz_panel_enter_from_bottom</item>
+		<item name="android:windowExitAnimation">@anim/mz_panel_exit_from_bottom</item>
+	</style>
+
+	<style name="Animation.Panel.Top" parent="mz.PanelFragment">
+		<item name="android:windowEnterAnimation">@anim/mz_panel_enter_from_top</item>
+		<item name="android:windowExitAnimation">@anim/mz_panel_exit_from_top</item>
+	</style>
+
+	<style name="Animation.Panel.Left" parent="mz.PanelFragment">
+		<item name="android:windowEnterAnimation">@anim/mz_panel_enter_from_left</item>
+		<item name="android:windowExitAnimation">@anim/mz_panel_exit_from_left</item>
+	</style>
+
+	<style name="Animation.Panel.Right" parent="mz.PanelFragment">
+		<item name="android:windowEnterAnimation">@anim/mz_panel_enter_from_right</item>
+		<item name="android:windowExitAnimation">@anim/mz_panel_exit_from_right</item>
+	</style>
+
+	<style name="mz.PanelFragment.Bottom" parent="mz.PanelFragment">
+		<item name="android:windowAnimationStyle">@style/Animation.Panel.Bottom</item>
+		<!--<item name="android:windowBackground">@android:color/transparent</item>-->
+	</style>
+
+	<style name="mz.PanelFragment.Top" parent="mz.PanelFragment">
+		<item name="android:windowAnimationStyle">@style/Animation.Panel.Top</item>
+	</style>
+
+	<style name="mz.PanelFragment.Left" parent="mz.PanelFragment">
+		<item name="android:windowAnimationStyle">@style/Animation.Panel.Left</item>
+	</style>
+
+	<style name="mz.PanelFragment.Right" parent="mz.PanelFragment">
+		<item name="android:windowAnimationStyle">@style/Animation.Panel.Right</item>
+	</style>
+
+	<!-- Dialog Fragment end -->
+</resources>
